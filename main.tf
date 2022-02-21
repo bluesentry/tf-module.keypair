@@ -10,6 +10,7 @@ resource "aws_key_pair" "generated" {
   depends_on = [tls_private_key.default]
   key_name   = var.name
   public_key = tls_private_key.default.public_key_openssh
+  tags       = var.tags
 }
 
 
