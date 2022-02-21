@@ -4,7 +4,7 @@ Terraform module for creating key pair.  This module will create the key, add th
 ## Usage ##
 ```hcl-terraform
 module "key-openvpn" {
-  source  = "git@github.com:bluesentry/tf-module.keypair.git?ref=v2.0.3"
+  source  = "git@github.com:bluesentry/tf-module.keypair.git?ref=v2.0.4"
   name    = "openvpn"
   tags    = local.tags
 }
